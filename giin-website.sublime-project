@@ -1,0 +1,33 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"Jekyll": 
+		{
+			"jekyll_auto_find_paths": true,
+			"jekyll_posts_path": "./_posts",
+			"jekyll_drafts_path": "./_drafts",
+			"jekyll_templates_path": "./_templates",
+			"jekyll_uploads_path": "./uploads",
+			"jekyll_markdown_extension": "markdown",
+			"jekyll_date_format": "%Y-%m-%d"
+		}
+	},
+    "build_systems":
+    [
+        // This will build your Jekyll site, and print a trace to the console
+        {
+            "name": "Jekyll",
+            // Change this directory to match your top-level Jekyll project folder
+            "working_dir": "$project_path",
+            "cmd": "jekyll build -t",
+            "shell": true,
+            "encoding": "UTF-8"
+        }
+    ]
+}
