@@ -9,4 +9,4 @@ layout: home
 
 # Welcome!
 
-We are a community of researchers interestes in molecular mechanisms of genomic information maintenance. Read more [here](/about)
+We are a community of researchers interestes in molecular mechanisms of genomic information maintenance. Read more [here](/about/)
