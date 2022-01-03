@@ -6,20 +6,20 @@ title: Home page
 layout: default
 ---
 
-<div class="container text-center">
-<img src="/assets/banner.png" />
+<div class="container text-center mt-5">
+<img src="/assets/banner.png" class="img-fluid"/>
 </div>
 
 <div class="container">
+<h1 class="h1 font-weight-light">
+Welcome!
+</h1>
 <p class="p-0">
     We are a community of researchers interested in molecular mechanisms of genomic information maintenance. <a href="/about/">Read more</a>.
 </p>
-<h2>Posts</h2>
+<h2 class="h2 font-weight-light">Posts</h2>
   <div class="archive">
-    {% for post in site.posts %} {% assign currDate = post.date | date: "%Y" %} {%
-    if currDate != date %}
-    <h3 class="archive-year">{{ currDate }}</h3>
-    {% assign date = currDate %} {% endif %}
+    {% for post in site.posts %} {% assign currDate = post.date | date: "%Y" %}
     <div class="archive-item">
       <div class="post-date archive-date fs-4">
         {{ post.date | date: "%B %d, %Y" }}
