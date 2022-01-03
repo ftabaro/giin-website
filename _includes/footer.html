@@ -1,6 +1,21 @@
-<footer class="navbar navbar-light bg-light"> 
+<footer class="page-footer border-top">
+	<div class="container mt-5 font-weight-light">
+		<div class="row">
+			<div class="col-lg-6 mt-lg-0 mt-3">
+			<p>
+				{{site.tagline}}<br>
+				<a href="mailto:{{site.email}}">{{site.email}}</a>
+			</p>
+			</div>
+			<div class="col-lg-6 mt-lg-0 mt-3">
+				<div class="px-5">
+					{{site.description}}
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="mx-auto">
-	{% include svg_icons.html %}
+		{% include svg_icons.html %}
 	</div>
 </footer>
 
