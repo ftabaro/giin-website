@@ -9,7 +9,7 @@ author:
 description: >- # this means to ignore newlines until "baseurl:"
   The Genome integrity italian Network is a scientific community of researchers interested in genetic information maintenance and genome stability
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://giin.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://genomeintegrityitaly.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 # Build settings
