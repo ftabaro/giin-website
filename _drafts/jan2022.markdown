@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "GiiN Webinar series - November session"
-date:   2021-11-09 16:06:19 +0100
+title:  "GiiN Webinar series - January session"
+date:   2022-01-03 16:06:19 +0100
 categories: webinar
 ---
 
-{% assign speakers = site.data.webinars.2021.11.speakers %}
-{% assign chairs = site.data.webinars.2021.11.chairs %}
+{% assign speakers = site.data.webinars.2022.01.speakers %}
+{% assign chairs = site.data.webinars.2022.01.chairs %}
 
 <h1 class="h1 font-weight-light">
     Welcome to the {{ page.date | date: "%B" }} session!
