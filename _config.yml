@@ -32,6 +32,8 @@ sass:
   sass_dir: assets/css
   style: compressed
 
+permalink: /:year/:month/:day/:title/
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
