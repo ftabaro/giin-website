@@ -32,7 +32,7 @@ Chairs of the session will be:
 </ul>
 
 {% for speaker in speakers %}
-<h2 class="h2 font-weight-light">
+<h2 class="h2 font-weight-light mt-3">
 About the speaker: {{speaker.name}}
 </h2>
 
