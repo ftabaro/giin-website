@@ -2,11 +2,22 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta name="google-site-verification" content="862mloXqAgsYYcQYzLmYB08cTyC-YGc-R1cJ7bOuKxg" />
+    {% seo %}
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ site.title }} - {{ page.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" >
-    {% seo %}
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DBRSF8PFPS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-DBRSF8PFPS');
+    </script>
   </head>
   <body>
     {% include navbar.html %}
