@@ -1,51 +1,28 @@
 ---
-layout: post
 title:  "GiiN Webinar series - January session"
+layout: webinar
 date:   2022-01-03 16:06:19 +0100
 categories: webinar
+speakers:
+  - name: Dana Branzei
+    title: PhD
+    institute: IFOM
+    nation: Italy
+    talk: "Replication-associated DNA repair and genome integrity"
+    pic: /assets/speakers/2022/01/branzei.jpg
+    bio: "Originally from Iaşi, Romania, Dana received her bachelor’s degree in pharmaceutical sciences and a master’s degree in molecular and cellular biology from Tohoku University in Sendai, Japan. For her PhD, she joined the lab of Takemi Enomoto to work on DNA replication and recombination in budding yeast. After a short postdoc with Kunihiro Ohta at the RIKEN laboratory in Wako (Japan), Dana took a position as a staff scientist with Marco Foiani at the Institute FIRC of Molecular Oncology (IFOM) in Milan, Italy. There, she became a junior group leader in 2008 and tenured principal investigator in 2013. From 2019, Dana is also a principal investigator at the Institute of Molecular Genetics (IGM) at CNR in Pavia. Dana was elected a member of EMBO in 2016 and has been the recipient of both a European Research Council (ERC) starting grant and an ERC consolidator grant. Her lab is interested in the mechanistic interplay of DNA damage response and chromosome structure during replication and beyond."
+    website: https://www.ifom.eu/en/cancer-research/research-labs/research-lab-branzei.php
+    pubmed: https://pubmed.ncbi.nlm.nih.gov/?term=Branzei+D&sort=date
+  - name:
+    title:
+    institute:
+    nation:
+    talk: ""
+    pic:
+    bio: ""
+chairs:
+  - name: Marco Saponaro
+    institute:
+  - name: Francisca Lottersber
+    institute:
 ---
-
-{% assign speakers = site.data.webinars.2022.01.speakers %}
-{% assign chairs = site.data.webinars.2022.01.chairs %}
-
-<h1 class="h1 font-weight-light">
-    Welcome to the {{ page.date | date: "%B" }} session!
-</h1>
-
-This month we are delighted to host two exciting talks:
-
-<ul>
-    {% for speaker in speakers %}
-    <li>
-        <strong>{{speaker.name}}</strong>, {{speaker.title}} ({{speaker.institute}}, {{speaker.nation}}): <i>{{speaker.talk}}</i>
-    </li>
-    {% endfor %}
-</ul>
-
-Chairs of the session will be:
-<ul>
-    {% for chair in chairs %}
-    <li>
-        {{chair.name}} - {{chair.institute}}
-    </li>
-    {% endfor %}
-</ul>
-
-{% for speaker in speakers %}
-<h2 class="h2 font-weight-light">
-About the speaker: {{speaker.name}}
-</h2>
-
-<div class="row">
-    <div class="col">
-        <div class="clearfix">
-            <img alt="{{speaker.name}}" src="{{speaker.pic}}" class="col-lg-4 float-left"/>
-            <p class="d-inline">
-                {{speaker.bio}}
-            </p>
-        </div>
-    </div>
-</div>
-{% endfor %}
-
-{% include about-webinars.html %}
