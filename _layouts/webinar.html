@@ -1,0 +1,54 @@
+---
+layout: post
+---
+
+
+<h1 class="h1 font-weight-light">
+    Welcome to the {{ page.date | date: "%B" }} session!
+</h1>
+
+This month we are delighted to host two exciting talks:
+
+<ul>
+    {% for speaker in page.speakers %}
+    <li>
+        <strong>{{speaker.name}}</strong>, {{speaker.title}} ({{speaker.institute}}, {{speaker.nation}}): <i>{{speaker.talk}}</i>
+    </li>
+    {% endfor %}
+</ul>
+
+Chairs of the session will be:
+<ul>
+    {% for chair in page.chairs %}
+    <li>
+        {{chair.name}} - {{chair.institute}}
+    </li>
+    {% endfor %}
+</ul>
+
+{% for speaker in page.speakers %}
+<h2 class="h2 font-weight-light">
+About the speaker: {{speaker.name}}
+</h2>
+
+<div class="row mb-3">
+    <div class="col">
+        <div class="clearfix">
+            <img alt="{{speaker.name}}" src="{{speaker.pic}}" class="col-lg-4 float-left"/>
+            <p class="d-inline">
+                {{speaker.bio}}
+            </p>
+            {% if speaker.website %}
+            <a href="{{speaker.website}}" class="btn btn-primary mt-5" target="_blank">{{speaker.name}} website</a>
+            {%endif%}
+            {% if speaker.pubmed %}
+            <a href="{{speaker.pubmed}}" class="btn btn-primary mt-5" target="_blank">PubMed</a>
+            {%endif%}
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+{{content}}
+
+{% include about-webinars.html %}
