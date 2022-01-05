@@ -38,10 +38,13 @@ About the speaker: {{speaker.name}}
                 {{speaker.bio}}
             </p>
             {% if speaker.website %}
+            <div>
             <a href="{{speaker.website}}" class="btn btn-primary mt-5" target="_blank">{{speaker.name}} website</a>
-            {%endif%}
+            
             {% if speaker.pubmed %}
             <a href="{{speaker.pubmed}}" class="btn btn-primary mt-5" target="_blank">PubMed</a>
+            {%endif%}
+            </div>
             {%endif%}
         </div>
     </div>
