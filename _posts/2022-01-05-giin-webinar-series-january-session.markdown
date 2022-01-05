@@ -25,6 +25,4 @@ speakers:
 chairs:
   - name: Marco Saponaro
     institute: Institute of Cancer and Genomic Sciences, University of Birmingham
-  - name: Francisca Lottersberger
-    institute: Department of Biomedical and Clinical Sciences, Division of Molecular Medicine and Virology - Linköping University
 ---
