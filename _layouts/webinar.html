@@ -16,7 +16,12 @@ This month we are delighted to host two exciting talks:
     {% endfor %}
 </ul>
 
-Chairs of the session will be:
+{% if page.chairs.size > 0 %}
+    {% if page.chairs.size == 1 %}
+        Chair of the session will be:
+    {% elsif page.chairs.size > 1 %}
+        Chairs of the session will be:
+    {%endif%}
 <ul>
     {% for chair in page.chairs %}
     <li>
@@ -24,6 +29,7 @@ Chairs of the session will be:
     </li>
     {% endfor %}
 </ul>
+{% endif %}
 
 {% for speaker in page.speakers %}
 <h2 class="h2 font-weight-light">
