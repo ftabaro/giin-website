@@ -25,6 +25,17 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+footer-links:
+  email: genomeintegrityitaly@gmail.com
+  github: genomeintegrityitaly
+  linkedin: company/genomeintegrityitaly
+
+github:
+  id: 'your-github-name'
+  href: 'https://github.com/'
+  title: 'GitHub'
+  fa-icon: 'fa-github-square'
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
