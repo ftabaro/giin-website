@@ -1,4 +1,3 @@
-
 title: GiiN
 tagline: Genome integrity italian Network
 email: genomeintegrityitaly@gmail.com
@@ -8,12 +7,9 @@ author:
 
 description: >- # this means to ignore newlines until "baseurl:"
   The Genome integrity italian Network is a scientific community of researchers interested in genetic information maintenance and genome stability
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://genomeintegrityitaly.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" 
+url: "https://genomeintegrityitaly.github.io" 
 
-
-# Build settings
-#theme: minima
 sass:
   sass_dir: assets/css
   style: compressed
@@ -29,29 +25,3 @@ footer-links:
   email: genomeintegrityitaly@gmail.com
   github: genomeintegrityitaly
   linkedin: company/genomeintegrityitaly
-
-github:
-  id: 'your-github-name'
-  href: 'https://github.com/'
-  title: 'GitHub'
-  fa-icon: 'fa-github-square'
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
