@@ -79,7 +79,7 @@ webinars:
 
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
 
-<div class="container mt-4">
+<div class="container mt-4 mb-5">
 <h1 class="h1 font-weight-light">Our webinars</h1>
 {% for webinar in page.webinars %}
     {% if webinar.postdate %}
@@ -94,8 +94,10 @@ webinars:
 <div class="row">
     {% for speaker in webinar.speakers %}
     <div class="col-lg-6 text-center">
-        <h2 class="h2 font-weight-light">{{speaker.name}}, {{speaker.title}}</h2>
-        <p class="card-body"><i>{{speaker.institute}}, {{speaker.nation}}</i></p>
+      <div class="talk-card">
+          <h2 class="h2 font-weight-light">{{speaker.name}}, {{speaker.title}}</h2>
+          <p class="card-body"><i>{{speaker.institute}}, {{speaker.nation}}</i></p>
+        </div>
     </div>
     {% endfor %}
     {% if webinartime < nowunix %}
@@ -106,7 +108,7 @@ webinars:
     {% endif %}
     <div class="col-lg-12 mt-2">
         <div class="float-right">
-        <a href="{{posturl}}" class="btn btn-sm btn-info">Read more</a>
+        <a href="{{posturl}}" class="btn btn-sm btn-primary">Read more</a>
         </div>
     </div>
     {% endif %}
