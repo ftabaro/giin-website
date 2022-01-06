@@ -2,6 +2,7 @@
 layout: webinar
 title:  "GiiN Webinar series - December session"
 date:   2021-12-07 16:06:19 +0100
+talkdate:   2021-12-14
 categories: webinar
 speakers:
   - name: Gaëlle Legube

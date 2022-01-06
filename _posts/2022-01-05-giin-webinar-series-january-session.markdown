@@ -2,6 +2,7 @@
 title:  "GiiN Webinar series - January session"
 layout: webinar
 date:   2022-01-05 16:06:19 +0100
+talkdate: 2022-01-11
 categories: webinar
 speakers:
   - name: Karlene Cimprich
