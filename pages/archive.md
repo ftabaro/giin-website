@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Archive
+permalink: /archive
 ---
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
 

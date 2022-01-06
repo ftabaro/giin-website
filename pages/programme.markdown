@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Programme
+permalink: /programme
 webinars:
     - date: 14-09-2021
       speakers:

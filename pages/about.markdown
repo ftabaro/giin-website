@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about
 ---
 
 The Genome Integrity Italian Network (GiiN) is a scientific community founded in 2021 by Simona Giunta (University of Rome Sapienza) and Stefano Santaguida (Institute of Oncology; University of Milan) to bring together national and international laboratories that work in the field of genome stability. 
