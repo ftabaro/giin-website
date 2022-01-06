@@ -6,32 +6,44 @@ layout: post
     Welcome to the {{ page.date | date: "%B" }} session!
 </h1>
 
-This month we are delighted to host two exciting talks:
+<p class="p">We are excited to host two great talks this month:</p>
 
-<ul>
+<div class="row mt-5">
     {% for speaker in page.speakers %}
-    <li>
-        <strong>{{speaker.name}}</strong>, {{speaker.title}} ({{speaker.institute}}, {{speaker.nation}}): <i>{{speaker.talk}}</i>
-    </li>
+    <div class="col-lg-6 text-center">
+        {% if speaker.talk %}
+        <h3 class="h3">{{speaker.talk}}</h3>
+        <h4 class="h4 font-weight-light">{{speaker.name}}, {{speaker.title}}</h4>
+        <h5 class="h5 font-weight-light">{{speaker.institute}}, {{speaker.nation}}</h5>
+        {% else %}
+        <h3 class="h3 font-weight-light">{{speaker.name}}, {{speaker.title}}</h3>
+        <h4 class="h4 font-weight-light">{{speaker.institute}}, {{speaker.nation}}</h4>
+        {%endif%}
+    </div>
     {% endfor %}
-</ul>
+</div>
 
 {% if page.chairs.size > 0 %}
-    {% if page.chairs.size == 1 %}
-        Chair of the session will be:
-    {% elsif page.chairs.size > 1 %}
-        Chairs of the session will be:
-    {%endif%}
+<p class="p mt-3">
+{% if page.chairs.size == 1 %}
+    Chair of the session will be:
+{% elsif page.chairs.size > 1 %}
+    Chairs of the session will be:
+{%endif%}
+</p>
+
 <ul>
     {% for chair in page.chairs %}
     <li>
-        {{chair.name}} - {{chair.institute}}
+        <strong>{{chair.name}}</strong> - {{chair.institute}}
     </li>
     {% endfor %}
 </ul>
+</div>
 {% endif %}
 
 {% for speaker in page.speakers %}
+{% if speaker.bio %}
 <h2 class="h2 font-weight-light">
 About the speaker: {{speaker.name}}
 </h2>
@@ -55,6 +67,7 @@ About the speaker: {{speaker.name}}
         </div>
     </div>
 </div>
+{% endif %}
 {% endfor %}
 
 {{content}}
