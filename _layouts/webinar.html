@@ -9,18 +9,7 @@ layout: post
 <p class="p">We are excited to host two great talks this month:</p>
 
 <div class="row mt-5">
-    {% for speaker in page.speakers %}
-    <div class="col-lg-6 text-center">
-        {% if speaker.talk %}
-        <h3 class="h3">{{speaker.talk}}</h3>
-        <h4 class="h4 font-weight-light">{{speaker.name}}, {{speaker.title}}</h4>
-        <h5 class="h5 font-weight-light">{{speaker.institute}}, {{speaker.nation}}</h5>
-        {% else %}
-        <h3 class="h3 font-weight-light">{{speaker.name}}, {{speaker.title}}</h3>
-        <h4 class="h4 font-weight-light">{{speaker.institute}}, {{speaker.nation}}</h4>
-        {%endif%}
-    </div>
-    {% endfor %}
+    {% include talk-titles.html speakers=page.speakers %}
 </div>
 
 {% if page.chairs.size > 0 %}
@@ -44,9 +33,27 @@ layout: post
 
 {% for speaker in page.speakers %}
 {% if speaker.bio %}
+<div class="row">
+    <div class="col-lg-10">
 <h2 class="h2 font-weight-light">
 About the speaker: {{speaker.name}}
 </h2>
+</div>
+    <div class="col-lg-2 float-right">
+{% if speaker.website %}
+        <div class='d-none d-lg-block d-xl-block'>
+    <a href="{{speaker.website}}" class="btn btn-primary" target="_blank" data-toggle="tooltip" data-placement="top" title="{{speaker.name}} personal site">
+        <i class="fas fa-user"></i>
+    </a>
+    {% if speaker.pubmed %}
+    <a href="{{speaker.pubmed}}" class="btn btn-primary" target="_blank" data-toggle="tooltip" data-placement="top" title="{{speaker.name}} on PubMed">
+        <i class="fas fa-book"></i>
+    </a>
+    {%endif%}
+</div>
+{%endif%}
+</div>
+</div>
 
 <div class="row mb-3">
     <div class="col">
@@ -55,15 +62,7 @@ About the speaker: {{speaker.name}}
             <p class="d-inline">
                 {{speaker.bio}}
             </p>
-            {% if speaker.website %}
-            <div>
-            <a href="{{speaker.website}}" class="btn btn-primary mt-5" target="_blank">{{speaker.name}} website</a>
             
-            {% if speaker.pubmed %}
-            <a href="{{speaker.pubmed}}" class="btn btn-primary mt-5" target="_blank">PubMed</a>
-            {%endif%}
-            </div>
-            {%endif%}
         </div>
     </div>
 </div>
