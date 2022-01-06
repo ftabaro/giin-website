@@ -1,11 +1,11 @@
 ---
 title:  "GiiN Webinar series - January session"
 layout: webinar
-date:   2022-01-03 16:06:19 +0100
+date:   2022-01-05 16:06:19 +0100
 categories: webinar
 speakers:
   - name: Karlene Cimprich
-    title: PhD, Professor of Chemical and Systems Biology
+    title: PhD
     institute: Stanford University School of Medicine
     nation: USA
     talk: "RNA Meets DNA: Dangerous Liaisons in the Genome"
