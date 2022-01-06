@@ -6,7 +6,8 @@ permalink: /archive
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
 
 <div class="container mt-5">
-<h2 class="h2 font-weight-light">Webinars</h2>
+<h2 class="h2 font-weight-light">Webinar archive</h2>
+<p>This page collects all our past events.</p>
 <div class="archive">
   {% for post in site.posts %} 
   {% assign currDate = post.date | date: "%Y" %}

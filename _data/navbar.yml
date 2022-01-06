@@ -1,4 +1,6 @@
 - name: programme
   link: /programme
+- name: archive
+  link: /archive
 - name: About
   link: /about
