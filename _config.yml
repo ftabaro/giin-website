@@ -23,5 +23,6 @@ plugins:
 
 footer-links:
   email: genomeintegrityitaly@gmail.com
+  rss: https://genomeintegrityitaly.github.io/feed.xml
   github: genomeintegrityitaly
   linkedin: company/genomeintegrityitaly
