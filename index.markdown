@@ -20,19 +20,8 @@ layout: default
     We are a community of researchers interested in molecular mechanisms of genomic information maintenance. <a href="/about/">Read more</a>.
 </p>
 
-<h2 class="h2 font-weight-light">Posts</h2>
-
-<div class="archive">
-  {% for post in site.posts %} {% assign currDate = post.date | date: "%Y" %}
-  <div class="archive-item">
-    <div class="post-date archive-date fs-4">
-      {{ post.date | date: "%B %d, %Y" }}
-    </div>
-    <h3><a href="{{ post.url | relative_url }}" class="archive-title fs-4">
-      {{ post.title }}</a>
-    </h3>
-  </div>
-  {% endfor %}
+<div class="text-center">
+<h2 class="h2 font-weight-light"><a href="/programme">Checkout our programme</a></h2>
 </div>
 
 <p> 
