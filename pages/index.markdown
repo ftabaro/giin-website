@@ -39,7 +39,7 @@ permalink: /
     {%endfor%}
     <div class="text-center mt-5">
         <h2 class="h2">
-            <a class="badge badge-primary" href="/programme" style="padding: 0.4em">
+            <a href="/programme" style="padding: 0.4em">
                 <i class="fas fa-calendar-alt"></i> 
                 Checkout our programme
             </a>
