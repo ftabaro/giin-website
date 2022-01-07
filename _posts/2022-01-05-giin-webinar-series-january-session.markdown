@@ -25,5 +25,7 @@ speakers:
     pubmed: https://pubmed.ncbi.nlm.nih.gov/?term=Branzei+D&sort=date
 chairs:
   - name: Marco Saponaro
-    institute: Institute of Cancer and Genomic Sciences, University of Birmingham
+    institute: Institute of Cancer and Genomic Sciences, University of Birmingham, UK
+  - name: Michela Di Virgilio
+    institute: Max-Delbruck Center for Molecular Medicine, Berlin, Germany
 ---
