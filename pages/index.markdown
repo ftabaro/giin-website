@@ -27,7 +27,7 @@ permalink: /
         {% else %}
         {% assign talkdate = post.date %}
         {% endif %}
-        <p>Next webinar will be held virtually on {{talkdate | date: "%B"}}, {{talkdate | date: "%d"}}.</p>
+        <p>Latest seminar: {{talkdate | date: "%B"}}, {{talkdate | date: "%d"}}.</p>
         </div>
     </div>
     <div class="row mt-0">
