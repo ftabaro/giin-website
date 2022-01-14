@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Programme
+layout: page
+title: Webinar series
 permalink: /programme
 webinars:
     - date: 14-09-2021
@@ -57,13 +57,13 @@ webinars:
           nation: Italy
     - date: 08-02-2022
       speakers:
-        - name: Renata Basto
-          title: PhD
-          institute: Curie
-          nation: France
         - name: Vincenzo Costanzo
           title: PhD
           institute: IFOM
+          nation: Italy
+        - name: Luca Fava
+          title: PhD
+          institute: University of Trento
           nation: Italy
     - date: 08-03-2022
       speakers:
@@ -71,16 +71,14 @@ webinars:
           title: PhD
           institute: John Hopkins
           nation: USA
-        - name: Marina Mapelli
+        - name: Renata Basto
           title: PhD
-          institute: IEO
-          nation: Italy
+          institute: Curie
+          nation: France
 ---
 
 {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
 
-<div class="container mt-4 mb-5">
-<h1 class="h1 font-weight-light">Our webinars</h1>
 {% for webinar in page.webinars %}
     {% if webinar.postdate %}
         {% capture webinartime %}{{ webinar.postdate | date: '%s'}}{% endcapture %}
@@ -108,10 +106,9 @@ webinars:
     {% endif %}
     <div class="col-lg-12 mt-2">
         <div class="float-right">
-        <a href="{{posturl}}" class="btn btn-sm btn-primary">Read more</a>
+        <a href="{{posturl}}" class="btn btn-sm btn-primary">Read more...</a>
         </div>
     </div>
     {% endif %}
 </div>
 {% endfor %}
-</div>
