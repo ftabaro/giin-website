@@ -58,7 +58,7 @@ webinars:
     - date: 08-02-2022
       speakers:
         - name: Vincenzo Costanzo
-          title: PhD
+          title: MD, PhD
           institute: IFOM
           nation: Italy
         - name: Luca Fava
