@@ -4,8 +4,10 @@ title:  "GiiN Webinar series - November session"
 date:   2021-11-09 16:06:19 +0100
 categories: webinar
 speakers:
-  - name: Teresa Davoli
-    title: PhD
+  - name: 
+      - Teresa Davoli
+    title: 
+      - PhD
     institute: NYU
     nation: USA
     talk: "Proteogenomic analysis of cancer aneuploidy to understand cancer and the basic rules of gene regulation"

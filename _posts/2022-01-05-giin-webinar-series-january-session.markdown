@@ -5,8 +5,10 @@ date:   2022-01-05 16:06:19 +0100
 talkdate: 2022-01-11
 categories: webinar
 speakers:
-  - name: Karlene Cimprich
-    title: PhD
+  - name: 
+      - Karlene Cimprich
+    title: 
+      - PhD
     institute: Stanford University School of Medicine
     nation: USA
     talk: "RNA Meets DNA: Dangerous Liaisons in the Genome"
@@ -14,8 +16,10 @@ speakers:
     bio: "Karlene Cimprich is a Professor at Stanford University in the Department of Chemical and Systems Biology.  She received her PhD in chemistry from Harvard University and remained at Harvard for her postdoctoral work with Stuart Schreiber where she cloned and began to study the checkpoint kinase, ATR.  Her lab is interested in many aspects of genome instability, particularly as they relate to DNA replication. She seeks to understand the impact of replication stress signaling and DNA damage tolerance pathways on genome instability as well as the genome instability resulting from interactions between replication and transcription. Her work has also established the central importance of DNA-RNA hybrids or R-loops as a major endogenous source of replication stress and genome instability.  Dr. Cimprich serves on several editorial boards, has organized a number of international meetings and is a recipient of numerous awards.  Most recently she has been recognized as an AAAS fellow and an American Cancer Society Research Professor."
     website: https://cimprich.stanford.edu/
     pubmed: https://pubmed.ncbi.nlm.nih.gov/?term=Cimprich+K&sort=date
-  - name: Dana Branzei
-    title: PhD
+  - name: 
+      - Dana Branzei
+    title: 
+      - PhD
     institute: IFOM
     nation: Italy
     talk: "Replication-associated DNA repair and genome integrity"

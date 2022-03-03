@@ -5,15 +5,19 @@ date:   2021-12-07 16:06:19 +0100
 talkdate:   2021-12-14
 categories: webinar
 speakers:
-  - name: Gaëlle Legube
-    title: PhD
+  - name: 
+      - Gaëlle Legube
+    title: 
+      - PhD
     institute: CBI
     nation: France
     talk: Chromosome and chromatin dynamics at DNA Double Strand Breaks
     pic: /assets/speakers/2021/12/legube.jpg
     bio: "The Legube lab is interested in deciphering the function of chromatin during DNA double strand break (DSB) repair. This aspect of DSB repair is yet mostly unexplored, mainly because until recently, no system was available to induce DSBs at well identified loci, a prerequisite to study how chromatin influences repair. We have developed a system (the DIvA cell line), based on a restriction enzyme fused to the ligand-binding domain of oestrogen receptor (AsiSI-ER), in order to generate multiples sequence-specific DSBs. 4OHT treatment of this cell line triggers AsiSI nuclear localization and the rapid induction of ~150 DSBs on the human genome. Since it induces unambiguously positioned DSBs, one can use ChIP-chip/seq to draw high resolution profiles of DSB-induced chromatin modification and DNA repair complexes around breaks. Using this system, combined to these genome wide approaches we have been able to comprehensively characterize the chromatin landscape assembled at DSBs (Iacovoni et al, 2010; Clouaire et al, 2018), and the changes of chromosome conformation induced by DSBs (Aymard et al, 2017, Arnould et al, in press). Moreover we have recently provided evidence that transcribing chromatin displays specialized repair mechanisms compared to silent loci (Aymard et al, 2014, Aymard et al, 2017, Cohen et al, 2018, Marnef et al, 2019).<br><br>We will support Dr Tej Pandita for his NIH proposal, by providing help and advice for the use of the DIvA cell line. Moreover we will on our side, assess the effect of heat shock on the ability of the DSB to cluster, using both high throughput microscopy and 4C-seq/Hi-C approaches (as in Aymard et al, 2017), as well as the impact of temperature on translocation frequency (as in Cohen et al, 2018)."
-  - name: Giulia Guarguaglini
-    title: PhD
+  - name: 
+      - Giulia Guarguaglini
+    title: 
+      - PhD
     institute: CNR
     nation: Italy
     talk: "Versatile players in genome instability: the Aurora-A/TPX2 complex in mitosis and beyond"

@@ -5,8 +5,10 @@ date:   2022-02-03 12:05:45 +0100
 talkdate: 2022-02-08
 categories: webinar
 speakers:
-  - name: Vincenzo Costanzo
-    title: MD, PhD
+  - name: 
+      - Vincenzo Costanzo
+    title: 
+      - MD, PhD
     institute: IFOM
     nation: Italy
     talk: "Causes and consequences of DNA replication stress"
@@ -20,8 +22,10 @@ speakers:
     My work over the years has been highlighted in several News and Views and review articles and has led to major advance in the field of DNA damage response and DNA damage checkpoint as confirmed by work from many labs that extended my initial observations to mammalian model systems. During this time, I received numerous invitation to speak at international conferences. In 2010 I was granted a tenured position as senior group leader in UK. My former postdocs and students have achieved independent careers as assistant professors, senior scientist at pharmaceutical companies and prestigious laboratories. I have been awarded the Lister Institute Research Prize, the Harvard-Armenise career development award, European Research Council grant in 2006 and in 2013 and I have been nominated EMBO Young Investigator."
     website: https://www.ifom.eu/en/cancer-research/research-labs/research-lab-costanzo.php
     pubmed: https://pubmed.ncbi.nlm.nih.gov/?term=Costanzo+V
-  - name: Luca Fava
-    title: PhD
+  - name: 
+      - Luca Fava
+    title: 
+      - PhD
     institute: CIBIO, University of Trento
     nation: Italy
     talk: "How do cells count centrosomes? Novel insights in the p53 pathway "
