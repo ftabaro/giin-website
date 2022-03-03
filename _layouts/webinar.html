@@ -3,11 +3,11 @@ layout: default
 ---
 <div class="container mt-3">
   <span class="fs-4 text-muted">
-  {{ page.date | date: "%B %d, %Y" }}
+  {{ page.talkdate | date: "%B %d, %Y" }}
   </span>
   <div class="mt-4">
 <h1 class="h1 font-weight-light">
-    Welcome to the {{ page.date | date: "%B" }} session!
+    Welcome to the {{ page.talkdate | date: "%B" }} session!
 </h1>
 
 <p class="p">We are excited to host two great talks this month:</p>
@@ -40,7 +40,15 @@ layout: default
 <div class="row">
     <div class="col-lg-10">
 <h2 class="h2 font-weight-light">
-About the speaker: {{speaker.name}}
+    {% if speaker.name.size > 1 %}
+    About the speakers: {{speaker.name | join: " and " }}
+    {%else%}
+    About the speaker: {{speaker.name}}
+    {%endif%}
+
+    
+
+
 </h2>
 </div>
     <div class="col-lg-2 float-right">
@@ -49,20 +57,21 @@ About the speaker: {{speaker.name}}
     <a href="{{speaker.website}}" class="btn btn-primary" target="_blank" data-toggle="tooltip" data-placement="top" title="{{speaker.name}} personal website">
         <i class="fas fa-user"></i>
     </a>
-    {% if speaker.pubmed %}
+{%endif%}
+{% if speaker.pubmed %}
     <a href="{{speaker.pubmed}}" class="btn btn-primary" target="_blank" data-toggle="tooltip" data-placement="top" title="{{speaker.name}} on PubMed">
         <i class="fas fa-book"></i>
     </a>
-    {%endif%}
-</div>
 {%endif%}
+</div>
+
 </div>
 </div>
 
 <div class="row mb-3">
     <div class="col">
         <div class="clearfix">
-            <img alt="{{speaker.name}}" src="{{speaker.pic}}" class="col-lg-4 float-left"/>
+            <img alt="{{speaker.name}}" src="{{speaker.pic}}" class="col-lg-4 float-left headshot" />
             <p class="d-inline">
                 {{speaker.bio}}
             </p>
