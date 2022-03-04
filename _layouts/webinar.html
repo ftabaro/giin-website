@@ -51,21 +51,24 @@ layout: default
 
 </h2>
 </div>
-    <div class="col-lg-2 float-right">
-{% if speaker.website %}
+{% if speaker.website or speaker.pubmed %}
+    <div class="float-right">
         <div class='d-none d-lg-block d-xl-block'>
-    <a href="{{speaker.website}}" class="btn btn-primary" target="_blank" data-toggle="tooltip" data-placement="top" title="{{speaker.name}} personal website">
-        <i class="fas fa-user"></i>
-    </a>
-{%endif%}
-{% if speaker.pubmed %}
-    <a href="{{speaker.pubmed}}" class="btn btn-primary" target="_blank" data-toggle="tooltip" data-placement="top" title="{{speaker.name}} on PubMed">
-        <i class="fas fa-book"></i>
-    </a>
-{%endif%}
-</div>
+        {% if speaker.website %}
+            <a href="{{speaker.website}}" class="btn btn-primary" target="_blank" data-toggle="tooltip" data-placement="top" title="{{speaker.name}} personal website">
+                <i class="fas fa-user"></i>
+            </a>
+        {%endif%}
+        {% if speaker.pubmed %}
+            <a href="{{speaker.pubmed}}" class="btn btn-primary" target="_blank" data-toggle="tooltip" data-placement="top" title="{{speaker.name}} on PubMed">
+                <i class="fas fa-book"></i>
+            </a>
+        {%endif%}
+        </div>
+    </div>
+{% endif %}
 
-</div>
+
 </div>
 
 <div class="row mb-3">
