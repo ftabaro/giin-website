@@ -16,7 +16,7 @@ permalink: /
             We are a community of researchers interested in molecular mechanisms of genomic information maintenance.<br><br>
             Our mission is to discuss the latest findings, promote mobility, collaborations and opportunities for all colleagues working in our field.<br><br>
             We organize a monthly webinar hosting two excellent researchers in the field of Genome Integrity.<br>
-            <a href="/about/">Read more...</a>
+            <a href="/about">Read more...</a>
         </p>
     </div>
     <div class="row mt-5">
