@@ -138,7 +138,7 @@ webinars:
               {%endcapture%}
               {{allspeakers}}
             {% else %}
-              {{speaker.name}}, {{speaker.title}}|
+              {{speaker.name}}, {{speaker.title}}
             {% endif %}
           </h2>
           <p class="card-text"><i>{{speaker.institute}}, {{speaker.nation}}</i></p>
