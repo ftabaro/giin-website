@@ -6,8 +6,8 @@ talkdate: 2022-03-08
 categories: webinar
 speakers:
   - name: 
-        - Andrew Holland
         - Valentina Sladky
+        - Andrew Holland
     title: 
         - PhD
         - PhD

@@ -15,7 +15,25 @@
 <div class="col-lg-6 text-center">
     {% if speaker.talk %}
     <h3 class="h3">{{speaker.talk}}</h3>
-    <h4 class="h4 font-weight-light">{{speaker.name | slice: 0 }}, {{speaker.title | slice : 0 }}</h4>
+    <h4 class="h4 font-weight-light">
+    <!-- Test if speaker.name.first is an array -->
+    {% if speaker.name.first %} 
+    {% assign l = speaker.name.size | minus: 1 %}
+    {% assign range = (0..l) %}
+    {%capture allspeakers%}
+    {% for i in range %}
+        {% if i == l %}
+            {{speaker.name | slice: i}}, {{speaker.title | slice: i}}
+        {% else %}
+            {{speaker.name | slice: i}}, {{speaker.title | slice: i}} and
+        {%endif%}
+    {% endfor %}
+    {%endcapture%}
+    {{allspeakers}}
+    {% else %}
+        {{speaker.name }}, {{speaker.title }}
+    {% endif %}
+    </h4>
     <h5 class="h5 font-weight-light">{{speaker.institute}}, {{speaker.nation}}</h5>
     {% else %}
     <h3 class="h3 font-weight-light">{{speaker.name | slice : 0 }}, {{speaker.title | slice: 0 }}</h3>
