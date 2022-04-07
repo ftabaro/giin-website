@@ -74,11 +74,16 @@ layout: default
 <div class="row mb-3">
     <div class="col">
         <div class="clearfix">
+            {% if speaker.pic %}
             <img alt="{{speaker.name}}" src="{{speaker.pic}}" class="col-lg-4 float-left headshot" />
             <p class="d-inline">
                 {{speaker.bio}}
             </p>
-            
+            {% else %}
+            <p class="d-inline">
+                {{speaker.bio}}
+            </p>
+            {% endif %}
         </div>
     </div>
 </div>
