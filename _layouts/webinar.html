@@ -1,13 +1,20 @@
 ---
 layout: default
 ---
+
+{% if page.talkdate %}
+{% assign talkdate = page.talkdate %}
+{% else %}
+{% assign talkdate = page.date %}
+{% endif %}
+
 <div class="container mt-3">
   <span class="fs-4 text-muted">
-  {{ page.talkdate | date: "%B %d, %Y" }}
+  {{ talkdate | date: "%B %d, %Y" }}
   </span>
   <div class="mt-4">
 <h1 class="h1 font-weight-light">
-    Welcome to the {{ page.talkdate | date: "%B" }} session!
+    Welcome to the {{ talkdate | date: "%B" }} session!
 </h1>
 
 <p class="p">We are excited to host two great talks this month:</p>
@@ -56,12 +63,12 @@ layout: default
         <div class='d-none d-lg-block d-xl-block'>
         {% if speaker.website %}
             <a href="{{speaker.website}}" class="btn btn-primary" target="_blank" data-toggle="tooltip" data-placement="top" title="{{speaker.name}} personal website">
-                <i class="fas fa-user"></i>
+                <i class="far fa-user"></i>
             </a>
         {%endif%}
         {% if speaker.pubmed %}
             <a href="{{speaker.pubmed}}" class="btn btn-primary" target="_blank" data-toggle="tooltip" data-placement="top" title="{{speaker.name}} on PubMed">
-                <i class="fas fa-book"></i>
+                <i class="fas fa-university"></i>
             </a>
         {%endif%}
         </div>

@@ -1,0 +1,66 @@
+<div class="row">
+    {% for person in include.people %}
+      <div class="col-lg-6">
+        <div class="card text-center" style="width: 25rem; margin-bottom: 1rem;">
+            <img alt="" src="{{person.pic}}" class="card-img-top" />
+            <div class="card-body">
+            <h2 class="card-title font-weight-light">
+              {% if person.name.first %}
+                {% assign l = person.name.size | minus: 1 %}
+                {% assign range = (0..l) %}
+                {% capture allpersons %}
+                  {% for i in range %}
+                    {% if i == l %}
+                      {{person.name | slice: i}}, {{person.title | slice: i}}
+                    {% else %}
+                      {{person.name | slice: i}}, {{person.title | slice:   i}} and
+                    {%endif%}
+                  {% endfor %}
+                {%endcapture%}
+                {{allpersons}}
+              {% elsif person.title %}
+                {{person.name}}, {{person.title}}
+              {% else %}
+                {{person.name}}
+              {% endif %}
+            </h2>
+            <p class="card-text">
+            {% if person.institute %}
+              <i>{{person.institute}}, {{person.nation}}</i>
+            {% endif %}
+            {% if person.website %}
+            <a href="{{person.website}}" data-toggle="tooltip" data-placement="top" title="{{person.name}} personal website">
+              <i class="far fa-user fa-2x mx-2"></i>
+            </a>
+            {% endif %}
+            {% if person.twitter %}
+            <a href="{{person.twitter}}" data-toggle="tooltip" data-placement="top" title="{{person.name}} on Twitter">
+            <i class="fab fa-twitter fa-2x mx-2"></i>
+          </a>
+            {% endif %}
+            {% if person.researchgate %}
+            <a href="{{person.researchgate}}" data-toggle="tooltip" data-placement="top" title="{{person.name}} on Research Gate">
+              <i class="fab fa-researchgate fa-2x mx-2"></i>
+            </a>
+            {% endif %}
+            {% if person.pubmed %}
+            <a href="{{person.pubmed}}" data-toggle="tooltip" data-placement="top" title="{{person.name}} on PubMed">
+            <i class="fas fa-university fa-2x mx-2"></i>
+            </a>
+            {% endif %}
+            {% if person.orcid %}
+            <a href="{{person.orcid}}"  data-toggle="tooltip" data-placement="top" title="ORCiD">
+            <i class="fab fa-orcid fa-2x mx-2"></i>
+            </a>
+            {% endif %}
+            {% if person.github %}
+            <a href="{{person.github}}"  data-toggle="tooltip" data-placement="top" title="{{person.name}} on GitHub">
+            <i class="fab fa-github fa-2x mx-2"></i>
+            </a>
+            {% endif %}
+            </p>
+          </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

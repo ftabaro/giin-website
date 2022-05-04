@@ -1,5 +1,5 @@
-- name: programme
-  link: /programme
+- name: Calendar
+  link: /calendar
 - name: archive
   link: /archive
 - name: About

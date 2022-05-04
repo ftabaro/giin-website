@@ -1,0 +1,55 @@
+
+
+{% assign nowunix = include.nowunix | plus: 0 %}
+{% for webinar in include.webinars -%}
+    {% capture webinartime %}
+      {% if webinar.postdate %}
+          {{ webinar.postdate | date: '%s'}}
+      {% else %}
+          {{ webinar.date | date: '%s'}}
+      {% endif %}
+    {% endcapture %}
+    {% assign webinartime = webinartime | plus: 0 %}
+
+<h3 class="h3 font-weight-light mt-4">
+    {{ webinar.date | date: "%d %B %Y" }}
+    
+    {% if webinartime < nowunix -%}
+      {% capture posturl %}      
+        /{{ webinartime | date: '%Y' }}/{{ webinartime | date: '%m' }}/{{ webinartime | date: '%d' }}/giin-webinar-series-{{ webinartime | date: '%B' | downcase }}-session/
+      {% endcapture %}
+      <a href="{{posturl}}" class="btn btn-sm btn-primary float-right">Read more...</a>
+    {% endif %}
+</h3>
+<div class="row">
+    {% for speaker in webinar.speakers %}
+    <div class="col-lg-6">
+      <div class="card text-center" style="width: 25rem; margin-bottom: 1rem;">
+          <img alt="" src="{{speaker.pic}}" class="card-img-top" />
+          <div class="card-body">
+          <h2 class="card-title font-weight-light">
+            {% if speaker.name.first %}
+              {% assign l = speaker.name.size | minus: 1 %}
+              {% assign range = (0..l) %}
+              {% capture allspeakers %}
+                {% for i in range %}
+                  {% if i == l %}
+                    {{speaker.name | slice: i}}, {{speaker.title | slice: i}}
+                  {% else %}
+                    {{speaker.name | slice: i}}, {{speaker.title | slice:   i}} and
+                  {%endif%}
+                {% endfor %}
+              {%endcapture%}
+              {{allspeakers}}
+            {% else %}
+              {{speaker.name}}, {{speaker.title}}
+            {% endif %}
+          </h2>
+          <p class="card-text"><i>{{speaker.institute}}, {{speaker.nation}}</i></p>
+        </div>
+    </div>
+</div>
+    {% endfor %}
+</div>
+<hr>
+{% endfor %}

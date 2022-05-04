@@ -1,0 +1,136 @@
+edition2022:
+  - date: 12-04-2022
+    postdate: 05-04-2022
+    speakers:
+      - name: Stefano Mattarocci
+        title: PhD
+        institute: CEA
+        nation: France
+        pic: /assets/speakers/2022/04/mattarocci-resized.jpg
+      - name: Oliver Gavet
+        title: PhD
+        institute: CNRS
+        nation: France
+        pic: /assets/speakers/2022/04/gavet-resized.jpg
+  - date: 10-05-2022
+    postdate: 04-05-2022
+    speakers:
+      - name: Emilio Cusanelli
+        title: PhD
+        institute: CIBIO
+        nation: Italy
+        pic: /assets/speakers/2022/05/cusanelli-resized.jpg
+      - name: Claus Azzalin
+        title: PhD
+        institute: IMM
+        nation: Portugal
+        pic: /assets/speakers/2022/05/azzalin-resized.jpg
+  - date: 14-06-2022
+    speakers:
+      - name: Agnel Sfeir
+        title: PhD
+        institute: NYU
+        nation: USA
+      - name: Michela Di Virgilio
+        title: PhD
+        institute: MDC
+        nation: Germany
+  - date: 13-09-2022
+    speakers:
+      - name: Teresa Teixeira
+        title: PhD
+        institute: CNRS
+        nation: France
+      - name: Irene Chiolo
+        title: PhD
+        institute: USC    
+        nation: Susan 
+edition2021:
+  - date: 14-09-2021
+    speakers:
+      - name: Susan Gasser
+        title: PhD
+        institute: FMI
+        nation: Switzerland
+      - name: Fabrizio d’Adda di Fagagna
+        title: PhD
+        institute: IFOM
+        nation: Italy
+  - date: 12-10-2021
+    speakers:
+      - name: Dani Fachinetti
+        title: PhD
+        institute: Curie
+        nation: France
+      - name: Marina Mapelli
+        title: PhD
+        institute: IEO
+        nation: Italy
+  - date: 09-11-2021
+    speakers:
+      - name: Teresa Davoli
+        title: PhD
+        institute: NYU
+        nation: USA
+        pic: /assets/speakers/2021/11/davoli-resized.png
+      - name: Ylli Doksani
+        title: PhD
+        institute: IFOM
+        nation: Italy
+        pic: /assets/speakers/2021/11/doksani-resized.png
+  - date: 14-12-2021
+    postdate: 07-12-2021
+    speakers:
+      - name: Gaëlle Legube
+        title: PhD
+        institute: CBI
+        nation: France
+        pic: /assets/speakers/2021/12/legube-resized.jpg
+      - name: Giulia Guarguaglini
+        title: PhD
+        institute: University of Rome Sapienza
+        nation: Italy
+        pic: /assets/speakers/2021/12/guarguaglini-resized.png
+  - date: 11-01-2022
+    postdate: 05-01-2022
+    speakers:
+      - name: Karlene Chimprich
+        title: PhD
+        institute: Stanford
+        nation: USA
+        pic: /assets/speakers/2022/01/cimprich-resized.jpg
+      - name: Dana Branzei
+        title: PhD
+        institute: IFOM
+        nation: Italy
+        pic: /assets/speakers/2022/01/branzei-resized.jpg
+  - date: 08-02-2022
+    postdate: 03-02-2022
+    speakers:
+      - name: Vincenzo Costanzo
+        title: MD, PhD
+        institute: IFOM
+        nation: Italy
+        pic: /assets/speakers/2022/02/costanzo-resized.png
+      - name: Luca Fava
+        title: PhD
+        institute: University of Trento
+        nation: Italy
+        pic: /assets/speakers/2022/02/fava-resized.jpg
+  - date: 08-03-2022
+    postdate: 01-03-2022
+    speakers:
+      - name: 
+          - Valentina Sladky
+          - Andrew Holland
+        title:
+          - PhD
+          - PhD
+        institute: John Hopkins
+        nation: USA
+        pic: /assets/speakers/2022/03/sladky-resized.png
+      - name: Renata Basto
+        title: PhD
+        institute: Curie
+        nation: France
+        pic: /assets/speakers/2022/03/basto-resized.jpg
