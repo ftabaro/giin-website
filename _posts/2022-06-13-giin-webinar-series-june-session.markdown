@@ -10,10 +10,10 @@ speakers:
         - Agnel Sfeir
     title: 
         - PhD
-    institute: NYU
+    institute: MSKCC
     nation: USA
     talk: "A tale of two genomes: DNA repair in the mitochondria and the nucleus"
-    pic: /assets/speakers/2022/06/sfeir.png
+    pic: /assets/speakers/2022/06/sfeir-resized.png
     bio: "Agnel Sfeir is a group leader at the Sloan Kettering Institute, in NY.<br/> 
     She received her Ph.D. in Cell Biology in the laboratory of Jerry Shay and Woodring Wright at the University of Texas Southwestern Medical Center in 2006. She joined Titia de Lange’s lab at  the Rockefeller University, for post-doctoral training, until 2012. She has been a Skirball Associate Professor of Genetics  at NYU Langone Medical Center and since 2021, she is a Member and Pain Webber Chair of Cancer Genetics at the Memorial Sloan Kettering Cancer Center.<br/>
 The Sfeir lab research focuses on how mammalian cells ensure the stability of their genomes and avoid becoming tumorigenic.<br/>
@@ -28,7 +28,7 @@ She is the recipient of numerous awards, including Mathers Foundation award, Pew
     institute: MDC
     nation: Germany
     talk: "A focus on B cells: DNA repair & beyond"
-    pic: /assets/speakers/2022/06/divirgilio.jpg
+    pic: /assets/speakers/2022/06/divirgilio-resized.jpg
     bio: "Michela Di Virgilio is a group leader at the Max-Delbrück Center for Molecular Medicine (MDC) in Berlin.<br/>
     She  received her Ph.D.  in 2006 (Università degli Studi di Milano and Columbia University). She has  been a staff scientist at the Department of Genetics & Development,  Institute for Cancer Genetics, Columbia University, NY, from 2002 to 2007, then she moved to the Laboratory of Molecular Immunology at The Rockefeller University, NY, until 2014. She is Member of the Adjunct Faculty, Laboratory of Molecular Immunology, at The Rockefeller University, NY.<br/>
 Since 2014, she leads the Laboratory of DNA repair and Maintenance of Genome Stability, Max-Delbruck Center for Molecular Medicine (MDC), in Berlin.<br/> 
