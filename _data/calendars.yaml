@@ -31,10 +31,12 @@ edition2022:
         title: PhD
         institute: NYU
         nation: USA
+        pic: /assets/speakers/2022/06/sfeir-resized.png
       - name: Michela Di Virgilio
         title: PhD
         institute: MDC
         nation: Germany
+        pic: /assets/speakers/2022/06/divirgilio-resized.jpg
   - date: 13-09-2022
     speakers:
       - name: Teresa Teixeira

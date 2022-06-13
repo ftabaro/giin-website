@@ -83,11 +83,13 @@ layout: default
         <div class="clearfix">
             {% if speaker.pic %}
             <img alt="{{speaker.name}}" src="{{speaker.pic}}" class="col-lg-4 float-left headshot" />
-            <p class="d-inline">
-                {{speaker.bio}}
-            </p>
+            <div class="d-inline">
+                <p class="text-jusify">
+                    {{speaker.bio}}
+                </p>
+            </div>
             {% else %}
-            <p class="d-inline">
+            <p class="d-inline text-justify">
                 {{speaker.bio}}
             </p>
             {% endif %}
