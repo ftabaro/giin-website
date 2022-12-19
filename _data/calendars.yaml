@@ -37,16 +37,49 @@ edition2022:
         institute: MDC
         nation: Germany
         pic: /assets/speakers/2022/06/divirgilio-resized.jpg
-  - date: 13-09-2022
+  - postdate: 12-09-2022
+    date: 13-09-2022
     speakers:
       - name: Teresa Teixeira
         title: PhD
         institute: CNRS
         nation: France
+        pic: /assets/speakers/2022/09/teixeira-resized.png
       - name: Irene Chiolo
         title: PhD
         institute: USC    
-        nation: Susan 
+        nation: US
+        pic: /assets/speakers/2022/09/chiolo-resized.png
+  - postdate: 10-10-2022
+    date: 11-10-2022
+    speakers:
+      - name: Francisca Lottersberger
+        title: PhD
+        institute: Linköping University
+        nation: Sweden
+        pic: /assets/speakers/2022/10/lottersberger-resized.png
+      - name: Marina Mione
+        title: PhD
+        institute: University of Trento    
+        nation: Italy
+        pic: /assets/speakers/2022/10/mione-resized.png
+  - postdate: 07-11-2022
+    date: 08-11-2022
+    speakers:
+      - name: Titia de Lange
+        title: PhD
+        institute: Rockefeller University
+        nation: US
+        pic: /assets/speakers/2022/11/delange-resized.png
+      - name: Marco Foiani
+        title: PhD
+        institute: IFOM
+        nation: Italy
+        pic: /assets/speakers/2022/11/foiani-resized.png
+
+
+
+  
 edition2021:
   - date: 14-09-2021
     speakers:
