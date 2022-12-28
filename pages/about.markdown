@@ -4,6 +4,17 @@ title: About
 permalink: /about
 people:
     chairs:
+        - name: Stefano Mattarocci
+          pic: /assets/contributors/mattarocci-resized.jpg
+          website:
+          pubmed: https://pubmed.ncbi.nlm.nih.gov/?term=Mattarocci%2C+Stefano%5BAuthor%5D&sort=pubdate
+          researchgate: https://www.researchgate.net/profile/Stefano-Mattarocci
+          orcid:
+        - name: Sofia Francia
+          pic: /assets/contributors/francia-resized.jpg
+          website:
+          pubmed:
+          orcid:
         - name: Grazia Daniela Raffa
           pic: /assets/contributors/raffa-resized.jpg
           website:
@@ -27,6 +38,12 @@ people:
           pubmed: https://pubmed.ncbi.nlm.nih.gov/?term=santaguida%20s%20NOT%20Scambia&sort=date
           orcid: https://orcid.org/0000-0002-1501-6190
     volunteers:
+        - name: Julieta Rivosecchi
+          pic: /assets/contributors/rivosecchi-resized.png
+          website: 
+          researchgate: 
+          pubmed: 
+          orcid: 
         - name: Marta Marzullo
           pic: /assets/contributors/marzullo-resized.jpg
           website: 
